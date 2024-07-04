@@ -10,6 +10,8 @@ type Client struct {
 	httpClient *http.Client
 }
 
+const DEFAULT_BASE_API_ENDPOINT = "https://api.cryptoexchangestandard.com"
+
 func ensureHttpClient(httpClient *http.Client) *http.Client {
 	if httpClient == nil {
 		return &http.Client{}

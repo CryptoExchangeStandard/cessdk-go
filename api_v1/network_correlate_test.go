@@ -9,7 +9,7 @@ import (
 )
 
 func TestPostNetworkCorrelate(t *testing.T) {
-	client := api.NewClient("your_key", "http://159.223.21.91:8080", nil)
+	client := api.NewClient("your_key", api.DEFAULT_BASE_API_ENDPOINT, nil)
 
 	outputNetworks, err := client.PostNetworkCorrelate(context.Background(), api.PostNetworkCorrelateInput{
 		ExchangeFrom:        "Binance",

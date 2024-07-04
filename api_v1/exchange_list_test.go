@@ -9,7 +9,7 @@ import (
 )
 
 func TestGetExchangeList(t *testing.T) {
-	client := api.NewClient("your_key", "http://159.223.21.91:8080", nil)
+	client := api.NewClient("your_key", api.DEFAULT_BASE_API_ENDPOINT, nil)
 
 	outputExchanges, err := client.GetExchangeList(context.Background())
 
